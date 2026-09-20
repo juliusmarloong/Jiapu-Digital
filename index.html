@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiapu Digital</title>
+    
+    <style>
+        body {
+            background-color: #FF0000;
+            margin: 0;
+        }
+        footer1 {
+            background-color: #FFFFFF;
+            color: #222222;
+            text-align: center;
+            padding: 8px 0;
+            width: 100%;
+            display: block;
+            border-radius: 0px 0px 8px 8px;
+        }
+        footer1 h3 {
+            color: #222222;
+            font-size: 13px;
+        }
+        footer2 {
+            background-color: #8B0000;
+            padding: 15px;
+            text-align: center; 
+            color: #FFFFFF;
+            margin: 300px 30px 50px 30px;
+            display: block;
+            box-sizing: border-box;
+            border-radius: 15px;
+        }
+        footer2 p {
+            font-size: 15px;
+            overflow-wrap: break-word;
+        }
+        footer3 {
+            background-color: #FFFFFF;
+            width: 100%;
+            text-align: center;
+            color: #222222;
+            display: block;
+            margin-bottom: 0;
+            margin-top: 50px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        footer3 p {
+            font-size: 13px;
+            margin: 0;
+        }
+        .hamburger-btn {
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            width: 15px;
+            height: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .hamburger-btn span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #222222;
+            border-radius: 2px;
+        }
+        .footer-container-btn {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            margin: 25px 20px 15px 20px;
+        }
+        .footer-btn {
+            background-color: #8B0000;
+            color: #FFFFFF;
+            border: none;
+            padding: 8px 13px;
+            border-radius: 3px;
+            font-size: 10px;
+            cursor: pointer;
+            width: 30%; 
+            text-align: center;
+            transition: background-color 0.2s;
+         }
+         .footer-btn:active {
+            background-color: #007bff !important;
+         }
+         .sidebar-menu {
+            position: absolute;
+            top: 0;
+            left: -350px; 
+            width: 300px;
+            height: 149%;
+            background-color: #8B0000;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            transition: left 0.3s ease;
+            z-index: 999;
+            border-radius: 0px 12px 12px 0px;
+         }
+         .sidebar-menu a {
+            padding: 15px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            border-bottom: 1px solid #333333;
+            transition: background 0.2s;
+         }
+         .sidebar-menu a:active, .sidebar-   menu a:hover {
+            background-color: #007bff;
+         }
+         .sidebar-menu.active {
+            left: 0; 
+         }
+         footer4 {
+            background-color: #8B0000;
+            color: #FFFFFF;
+            font-size: 15px;
+            text-align: center;
+            display: block;
+            width: 100%
+            margin: 20px 0 50px 0;
+            padding: 15px;
+            box-sizing: border-box;
+            overflow-wrap: break-word;
+         }
+         .gambar-konten {
+            max-width: 100%;
+            height: auto;    
+            display: block;  
+            margin: 30px auto; 
+            border-radius: 8px;
+         }
+
+    </style>
+</head>
+<body>
+   
+   <div class="hamburger-btn" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+   </div>
+   
+   <div id="sideMenu" class="sidebar-menu">
+    <a href="jiapu.html">📖Jiapu (家谱)</a>
+    <a href="sejarahtionghoa.html">🔍Sejarah Tionghoa</a>
+    <a href="belajar.html">📚Belajar Budaya Tionghoa
+    <a href="beasiswa.html">Beasiswa</a>
+    <a href="tentangkami.html">Tentang Kami</a>
+   </div>
+
+   <footer1>
+    <h3>Jiapu Digital (家谱)</h3>
+   </footer1>
+   
+   <div class="footer-container-btn">
+    <button class="footer-btn" onclick="pindahHalaman('jiapu.html')">📖Jiapu (家谱)</button>
+    <button class="footer-btn" onclick="pindahHalaman('sejarahtionghoa.html')">🔍Sejarah Tionghoa</button>
+    <button class="footer-btn" onclick="pindahHalaman('beasiswa.html')">Beasiswa</button>
+   </div>
+   
+    <img src="gambarjiapucontoh.jpg" alt="Deskripsi Gambar">
+   
+   <footer2>
+    <p>Jiapu Digital (家谱) adalah sebuah buku silsilah keluarga marga Tionghoa berbasis website yang di digitalisasi. Untuk memudahkan para Saudara Tionghoa diluar daratan bisa terhubung kedesa leluhurnya, mencari desa leluhur asalnya didaratan tiongkok, dan bertemu keluarga besarnya disana. </p>
+    <p>Apa saja sih yang ada diwebsite ini?</p>
+    <p>1. Buku Silsilah Marga Tionghoa/Jiapu (家谱)</p>
+    <p>2. Sejarah Bangsa Tionghoa/Han</p>
+    <p>3. Sejarah para Perantau Tionghoa diluar daratan</p>
+    <p>4. Belajar Budaya, Adat, Tradisi dan seluruh bahasa dialek Tionghoa/Han</p>
+    <p>5. Beasiswa kuliah China, Hongkong dan Taiwan</p>
+    <p>Dan masih banyak fitur lainnya ikuti terus updatenya di instagram atau tiktok resmi kami</p>
+   </footer2>
+   
+   <footer4>
+<p>bdjdhebejehebejebebehdbdbbdbebejebdjdbdjdbdjeveud dje dhebe ehebehbehebebebehebehebe</p>
+   </footer4>
+   
+   <footer3>
+    <p>&copy; 2026 Julius Ong | 王德亮. All rights reserved.</p>
+    <p>Platform Jiapu Digital (家谱)</p>
+   </footer3>
+   
+   <script>
+   
+   function pindahHalaman(urlTujuan) {
+    // Jeda 200 milidetik biar efek klik warna birunya sempat kelihatan dulu
+    setTimeout(function() {
+        window.location.href = urlTujuan;
+    }, 200);
+   }
+   
+   function toggleMenu() {
+    const menu = document.getElementById('sideMenu');
+    // Membuka atau menutup kelas 'active' pada menu
+    menu.classList.toggle('active');
+   }
+
+   </script>
+</body>
+</html>
